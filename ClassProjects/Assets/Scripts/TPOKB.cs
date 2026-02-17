@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class TwoPlayersOneKeyboard : MonoBehaviour
+public class TPOKB : MonoBehaviour
 {
     [SerializeField] private InputActionReference P1Move;
     [SerializeField] private InputActionReference P2Move;
@@ -25,11 +25,10 @@ public class TwoPlayersOneKeyboard : MonoBehaviour
 
     private void Update()
     {
-       var m1 = P1Move.action.ReadValue<Vector2>();
-       var m2 = P2Move.action.ReadValue<Vector2>();
+        var m1 = P1Move.action.ReadValue<Vector2>();
+        var m2 = P2Move.action.ReadValue<Vector2>();
 
         if (P1) P1.position += new Vector3(m1.x, 0f, m1.y) * speed * Time.deltaTime;
         if (P2) P2.position += new Vector3(m2.x, 0f, m2.y) * speed * Time.deltaTime;
     }
-    
 }

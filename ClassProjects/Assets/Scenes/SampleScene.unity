@@ -496,6 +496,11 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!4 &449029447 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4945452117045281622, guid: 8eebd267f2477594cb6ee35ba62cf069, type: 3}
+  m_PrefabInstance: {fileID: 984351968490566199}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &671645863
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,6 +510,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 671645864}
+  - component: {fileID: 671645865}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -527,6 +533,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &671645865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671645863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c80478ffe86685468d12979b40f166b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TPOKB
+  P1Move: {fileID: -1680190386980627800, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  P2Move: {fileID: -7853604877963452962, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  P1: {fileID: 1927776650}
+  P2: {fileID: 449029447}
+  speed: 5
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,6 +599,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1927776650 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4769185084111271961, guid: 5fa25bed49104964387ad30942dea6ae, type: 3}
+  m_PrefabInstance: {fileID: 2483352955295796288}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &984351968490566199
 PrefabInstance:
   m_ObjectHideFlags: 0
