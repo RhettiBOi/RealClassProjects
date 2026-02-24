@@ -6,7 +6,7 @@ public class Player1 : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float Movespeed = 5f;
     [SerializeField] private float Jumpstep = 1f;
-    [SerializeField] private float Rotation = 100f;
+    [SerializeField] private float Rotation = 1000f;
     private Vector2 lookinput;
     private Vector2 moveinput;
 
